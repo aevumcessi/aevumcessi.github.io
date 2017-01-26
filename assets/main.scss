@@ -149,6 +149,9 @@ body {
   border-radius: 30px;
   text-transform: uppercase;
   margin-right: 0.5rem;
+  transition: .15s ease-in-out color,
+              .15s ease-in-out background,
+              .15s ease-in-out border;
 }
 
 .header .pill-btn {
@@ -159,9 +162,20 @@ body {
   letter-spacing: 0.15rem;
 }
 
+.header .pill-btn:hover {
+  color: $bg-color;
+  background: $bg-highlight-color;
+}
+
 .hero .pill-btn, .content-action .pill-btn {
   color: rgba($highlight-color, .8);
   border-color: $highlight-color;
+}
+
+.hero .pill-btn:hover,
+.content-action .pill-btn:hover {
+  color: $bg-color;
+  background: $highlight-color;
 }
 
 .hero .pill-btn {
