@@ -76,6 +76,26 @@ body {
   font: normal 1.5rem/2rem 'Montserrat', sans-serif;
 }
 
+.hero-subheading em {
+  color: white;
+}
+
+.pipe {
+  font-weight: 100;
+  font-size: 30px;
+  color: white;
+  -webkit-animation: 1s blink step-end infinite;
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
 .hero-actions {
   margin: 4rem 0;
 }
