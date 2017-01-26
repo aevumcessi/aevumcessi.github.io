@@ -104,6 +104,7 @@ body {
   background: $fg-color;
   border-top: 3px solid $highlight-color;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, .5);
+  padding-bottom: 1rem;
 }
 
 .content-header {
@@ -123,7 +124,7 @@ body {
 .content-body {
   background: $fg-inverted-color;
   border-top: 3px solid $bg-color;
-  border-bottom: 2px solid lighten($bg-color, 5);
+  border-bottom: 3px solid $bg-color;
   padding: 3rem;
   font: normal 1rem/1.7rem 'Montserrat', sans-serif;
   color: $fg-text-color;
