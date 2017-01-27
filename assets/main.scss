@@ -182,6 +182,12 @@ body {
   border-color: $highlight-color;
 }
 
+.hero .pill-btn .fa {
+  vertical-align: top;
+  line-height: .9rem;
+  padding-right: .4rem;
+}
+
 .hero .pill-btn:hover,
 .content-action .pill-btn:hover {
   color: $bg-color;
