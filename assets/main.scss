@@ -2,7 +2,7 @@
 ---
 
 $bg-color: #7fa1d1;
-$bg-highlight-color: #d9d8ff;
+$bg-highlight-color: #e6ccff;
 $bg-dark-color: #4d314b;
 $fg-color: #cedfff;
 $fg-inverted-color: #bce2ff;
@@ -43,8 +43,7 @@ body {
 }
 
 .hero {
-  background: url('https://webdev.acm.jhu.edu/assets/laptop.png') center bottom no-repeat;
-  padding-bottom: 190px;
+    padding-bottom: 20px;
 }
 
 .hero-group, .hero-actions {
