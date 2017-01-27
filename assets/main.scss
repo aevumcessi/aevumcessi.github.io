@@ -81,19 +81,28 @@ body {
 }
 
 .pipe {
-  font-weight: 100;
-  font-size: 30px;
   color: white;
-  -webkit-animation: 1s blink step-end infinite;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15rem solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  -webkit-animation:
+    2s typing steps(40, end),
+    1s blink step-end infinite;
 }
 
 @-webkit-keyframes "blink" {
   from, to {
-    color: transparent;
+    border-color: transparent;
   }
   50% {
-    color: white;
+    border-color: white;
   }
+}
+
+@-webkit-keyframes "typing" {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 .hero-actions {
