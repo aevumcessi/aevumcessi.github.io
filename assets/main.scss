@@ -130,6 +130,15 @@ body {
   color: $fg-text-color;
 }
 
+.content-body a {
+    color: darken($bg-color, 13);
+    text-decoration: none;
+}
+
+.content-body a:visited {
+    color: lighten($highlight-color, 15);
+}
+
 .content-action {
   text-align: right;
   margin-top: 1rem;
