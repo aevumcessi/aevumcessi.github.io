@@ -86,9 +86,17 @@ body {
   border-right: .15rem solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  -webkit-animation:
-    2s typing steps(40, end),
-    1s blink step-end infinite;
+  -webkit-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
 }
 
 @-webkit-keyframes "blink" {
@@ -100,9 +108,23 @@ body {
   }
 }
 
-@-webkit-keyframes "typing" {
-  from { width: 0 }
-  to { width: 100% }
+.typed-text {
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: 2.75s type linear;
+  animation: 2.75s type linear;
+}
+
+@keyframes type {
+  0%   { max-width: 0%; }
+  100% { max-width: 100%; }
+}
+
+@-webkit-keyframes "type" {
+  0% { max-width: 0%; }
+  100% {max-width: 100%; }
 }
 
 .hero-actions {
